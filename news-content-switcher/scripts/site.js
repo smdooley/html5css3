@@ -1,4 +1,6 @@
 $(function () {
+    "use strict";
+
     var hl = $('.highlight'),
          newsList = $('.news-headlines'),
     newsListItems = $('.news-headlines li'),
