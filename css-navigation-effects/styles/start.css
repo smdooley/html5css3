@@ -44,7 +44,7 @@ ul#nav li:hover {
     box-shadow: 0px 2px 7px #999;
     z-index: 1000;
 }
-
+/*
 ul#nav .icon {
     font-family: 'WebSymbolsRegular',cursive;
     font-size: 3em;
@@ -59,6 +59,25 @@ ul#nav li:hover .icon {
     -webkit-transform: scale(1.5);
     color: #b7480c;
 }
+*/
+
+/* custom */
+ul#nav li:after {
+    content: 'R';
+    font-family: 'WebSymbolsRegular', cursive;
+    font-size: 3em;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    text-shadow: 0px 2px 1px #999;
+    -webkit-transition: all 0.3s linear;
+}
+
+ul#nav li:hover:after {
+    -webkit-transform: scale(1.5);
+    color: #b7480c;
+}
+/* /custom */
 
 ul#nav li a h4 {
     margin: 0;
