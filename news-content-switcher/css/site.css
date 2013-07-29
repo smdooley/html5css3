@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+    font-size: 13px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+a:link, a:visited {
+    color: #336699;
+    text-decoration: none;
+}
+
+.news-headlines {
+    list-style: none;
+    position: relative;
+}
+
+.news-headlines li {
+    padding: 5px 20px 5px 24px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 20;
+    -webkit-transition: all .75s ease-out;
+    -moz-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    transition: all .75s ease-out;
+    color: #336699;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.news-headlines li:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: red;
+    vertical-align: middle;
+    margin-left: -12px;
+    margin-right: 7px;
+}
+
+.news-headlines li:hover {
+    cursor: pointer;
+}
+
+.news-headlines .highlight {
+    width: 100%;
+    background: white;
+    border-top: solid 1px #999;
+    border-left: solid 1px #999;
+    border-bottom: solid 1px #999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.news-headlines .highlight:before {
+    display: none;
+}
+
+.news-headlines {
+    float: left;
+    width: 49%;
+}
+
+.news-preview {
+    float: left;
+    border: solid 1px #999;
+    width: 51%;
+    background: white;
+    position: relative;
+    z-index: 5;
+    margin-left: -1px;
+    min-height: 304px;
+    position: relative;
+}
+
+.news-preview img {
+    display: block;
+    border: solid 1px #999;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+    max-height: 143px;
+    margin: 0 auto 5px auto;
+}
+
+.news-content {
+    position: absolute;
+    background: white;
+    z-index: 10;
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+
+.top-content {
+    z-index: 50;
+}
